@@ -8,34 +8,91 @@
         <meta name="keywords" content="Libreria, MisionTIC, Sergio Arboleda">
         <meta name="author" content="Carlos Andres Sierra">
 
-        <title>Librer&iacute;a</title>
+        <title>Librería - Autor</title>
         <base href="/" />
 
         <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/misEstilos.css" />
+        <link rel="stylesheet" type="text/css" href="css/estilosBiblioteca.css" />
 
-        <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/author.js"></script>
     </head>
     <body>
-        <div class="container login">
-            <div class="row" align="right">
-                Iniciar Sesion
+    <div class="container login">
+        <div class="row">
+            <div class="col">
+                <span>Iniciar Sesión</span>
             </div>
         </div>
-        <div class="container banner">
-            <div class="row" align="center">
-                Biblioteca MisionTIC 2022
+    </div>
+
+    <div class="container header">
+        <div class="row">
+            <div class="col">
+                Biblioteca Misi&oacute;nTIC 2022
             </div>
         </div>
-        <div class="container menu">
-            <div class="row" align="center">
-                <a href="index.html"><button>Inicio</button></a> &nbsp;
-                <a href="book.html"><button>Libros</button></a> &nbsp;
-                <a href="editorial.html"><button>Editoriales</button></a> &nbsp;
-                <a href="author.html"><button>Autores</button></a>
+    </div>
+
+    <div class="container menu">
+        <div class="row">
+            <div class="col">
+                <nav>
+                    <a href="index.html"><button class="button_menu">Inicio</button></a> &nbsp;
+                    <a href="book.html"><button class="button_menu">Libros</button></a> &nbsp;
+                    <a href="editorial.html"><button class="button_menu">Editoriales</button></a> &nbsp;
+                    <a href="author.html"><button class="button_menu">Autores</button></a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container content">
+        <div class="row title">
+            <div class="col">
+                Autores
             </div>
         </div>
 
+        <div class="row new_element">
+            <div class="col">
+                <button id="btnNewAuthor" class="button_new" onclick="openModal(-1);">Nuevo Autor</button>
+            </div>
+        </div>
+
+        <div class="row data_grid">
+            <div class="col">
+                <table id="tblAuthors" class="table_data">
+                    <thead>
+                        <tr>
+                            <th>C&oacute;digo</th>
+                            <th>Nombres</th>
+                            <th>Apellidos</th>
+                            <th>Editar</th>
+                            <th>Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="modalNewAuthor" class="modal">
+            <div class="modal_content">
+                <h2 id="modalTitle"></h2><br />
+                <label>C&oacute;digo:</label>
+                <input type="number" id="txtCode" value="" /><br />
+                <label>Nombres:</label>
+                <input type="text" id="txtNames" value="" /><br />
+                <label>Apellidos:</label>
+                <input type="text" id="txtLastnames" value="" /><br />
+                <button id="btnAdd" class="button_add" onclick="insertAuthor();">Agregar</button>
+                <button id="btnUpdate" class="button_update" onclick="updateAuthor();">Actualizar</button>
+                <button id="btnCancel" class="button_cancel" onclick="closeModal();">Cancelar</button>
+            </div>
+        </div>
+    </div>
     </body>
 </html>

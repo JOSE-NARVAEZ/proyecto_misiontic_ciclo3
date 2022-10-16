@@ -1,0 +1,156 @@
+body {
+    font-family: Georgia, serif;
+    font-size: 19px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    max-width: 100%;
+    margin: auto;
+}
+
+.login {
+    text-align: right;
+    background: #89AFFF;
+    color: #EEEEEE;
+    width: 100%;
+    font-size: 12px;
+}
+
+.header {
+    background: #2439BB;
+    font-size: 60px;
+    color: #FFFFFF;
+    text-align: center;
+    height: 80px;
+    vertical-align: middle;
+}
+
+.menu {
+    text-align: center;
+    padding: 10px;
+}
+
+.content {
+}
+
+.title {
+     font-size: 25px;
+}
+
+.new_element{
+    text-align: center;
+    padding: 10px;
+}
+
+.data_grid {
+    text-align: center;
+}
+
+table.table_data {
+  border: 1px solid #05237C;
+  width: auto;
+  height: auto;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+table.table_data td, table.table_data th {
+  border: 1px solid #0D2981;
+  padding: 3px 5px;
+}
+
+table.table_data tbody td {
+  font-size: 17px;
+}
+
+table.table_data tr:nth-child(even) {
+  background: #D0E4F5;
+}
+
+table.table_data thead {
+  background: #0B6FA4;
+  border-bottom: 5px solid #FFFFFF;
+}
+
+table.table_data thead th {
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 2px solid #17A1E2;
+}
+
+.button_menu {
+    -webkit-border-radius: 40px 10px 40px 10px;
+    -moz-border-radius: 40px 10px 40px 10px;
+    border-radius: 40px 10px 40px 10px;
+    border: 1px solid #2439BB;
+    color: #FFFF00;
+    background: #345ACC;
+    height: 35px;
+    width: 150px;
+}
+
+.button_new {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    color: #ABCDEF;
+    background: #00FF00;
+    height: 35px;
+    width: 200px;
+}
+
+.button_add {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    color: #ABCDEFF;
+    background: #33CC33;
+    height: 35px;
+    width: 200px;
+}
+
+.button_update {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    color: #ABCDEFF;
+    background: #888800;
+    height: 35px;
+    width: 200px;
+}
+
+.button_cancel {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    color: #ABCDEFF;
+    background: #CC3333;
+    height: 35px;
+    width: 200px;
+}
+
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 200px;
+    top: 0;
+    width: auto;
+    height: auto;
+    overflow: auto;
+}
+
+.modal_content{
+    background-color: #DDDDDD;
+    margin: 30% auto;
+    padding: 20px;
+    border: 1px solid #AAAAAA;
+    width: auto;
+}

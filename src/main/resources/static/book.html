@@ -8,33 +8,95 @@
         <meta name="keywords" content="Libreria, MisionTIC, Sergio Arboleda">
         <meta name="author" content="Carlos Andres Sierra">
 
-        <title>Librer&iacute;a</title>
+        <title>Librería - Libros</title>
         <base href="/" />
 
         <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/misEstilos.css" />
+        <link rel="stylesheet" type="text/css" href="css/estilosBiblioteca.css" />
 
-        <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/book.js"></script>
     </head>
     <body>
         <div class="container login">
-            <div class="row" align="right">
-                Iniciar Sesion
+            <div class="row">
+                <div class="col">
+                    <span>Iniciar Sesión</span>
+                </div>
             </div>
         </div>
-        <div class="container banner">
-            <div class="row" align="center">
-                Biblioteca MisionTIC 2022
+
+        <div class="container header">
+            <div class="row">
+                <div class="col">
+                    Biblioteca Misi&oacute;nTIC 2022
+                </div>
             </div>
         </div>
+
         <div class="container menu">
-            <div class="row" align="center">
-                <a href="index.html"><button>Inicio</button></a> &nbsp;
-                <a href="book.html"><button>Libros</button></a> &nbsp;
-                <a href="editorial.html"><button>Editoriales</button></a> &nbsp;
-                <a href="author.html"><button>Autores</button></a>
+            <div class="row">
+                <div class="col">
+                    <nav>
+                        <a href="index.html"><button class="button_menu">Inicio</button></a> &nbsp;
+                        <a href="book.html"><button class="button_menu">Libros</button></a> &nbsp;
+                        <a href="editorial.html"><button class="button_menu">Editoriales</button></a> &nbsp;
+                        <a href="author.html"><button class="button_menu">Autores</button></a>
+                    </nav>
+                </div>
             </div>
         </div>
+
+        <div class="container content">
+            <div class="row title">
+                <div class="col">
+                        Libros
+                </div>
+            </div>
+
+            <div class="row new_element">
+                <div class="col">
+                    <button id="btnNewBook" class="button_new" onclick="openModal(-1);">Nuevo Libro</button>
+                </div>
+            </div>
+
+            <div class="row data_grid">
+                <div class="col">
+                    <table id="tblBooks" class="table_data">
+                        <thead>
+                            <tr>
+                                <th>ISBN</th>
+                                <th>T&iacute;tulo</th>
+                                <th>A&ntilde;o</th>
+                                <th>Editorial</th>
+                                <th>Editar</th>
+                                <th>Eliminar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div id="modalNewBook" class="modal">
+            <div class="modal_content">
+                <h2 id="modalTitle"></h2><br />
+                <label>ISBN:</label>
+                <input type="number" id="txtIsbn" value="" /> <br />
+                <label>T&iacute;tulo:</label>
+                <input type="text" id="txtTitle" value=""> <br />
+                <label>A&ntilde;o:</label>
+                <select id="cbxYear" value=""></select> <br />
+                <label>Editorial:</label>
+                <select id="cbxEditorial"></select> <br />
+                <button id="btnAdd" class="button_add" onclick="insertBook();">Agregar</button>
+                <button id="btnUpdate" class="button_update" onclick="updateBook();">Actualizar</button>
+                <button id="btnCancel" class="button_cancel" onclick="closeModal();">Cancelar</button>
+            </div>
+        </div>
+
     </body>
 </html>
