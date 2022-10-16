@@ -1,5 +1,5 @@
 body {
-    font-family: Georgia, serif;
+    font-family: Verdana, sans-serif;
     font-size: 19px;
     letter-spacing: 2px;
     word-spacing: 2px;
@@ -13,6 +13,17 @@ body {
     margin: auto;
 }
 
+input {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+}
+
+label {
+
+}
+
 .login {
     text-align: right;
     background: #89AFFF;
@@ -22,7 +33,7 @@ body {
 }
 
 .header {
-    background: #2439BB;
+    background: #150050git;
     font-size: 60px;
     color: #FFFFFF;
     text-align: center;
@@ -145,6 +156,9 @@ table.table_data thead th {
     width: auto;
     height: auto;
     overflow: auto;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .modal_content{

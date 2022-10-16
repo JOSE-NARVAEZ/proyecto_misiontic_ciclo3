@@ -31,6 +31,7 @@ function openModal(isbn){
         $("#btnAdd").show();
         $("#btnUpdate").hide();
         $("#txtIsbn").val();
+        $("#txtIsbn").prop("disabled", false);
         $("#txtTitle").val("");
         loadEditorials(-1);
         loadYears(-1);
@@ -40,6 +41,7 @@ function openModal(isbn){
         $("#btnUpdate").show();
         book = getBook(isbn);
         $("#txtIsbn").val(book.isbn);
+        $("#txtIsbn").prop("disabled", true);
         $("#txtTitle").val(book.title);
         loadEditorials(book.editorialFK.idEditorial);
         loadYears(book.year);
@@ -113,8 +115,6 @@ function insertBook(){
     }
 
     let body = JSON.stringify(book);
-    console.log("Book\n"+body);
-
     $.ajax({
         url: URL_BASE + "/book/insert",
         type: "POST",
