@@ -11,6 +11,7 @@ $(document).ready(function (){
 //Acciones con el Modal
 function openModal(id){
     if(id==-1){ // Activar para agregar
+        $("#modalTitle").html("Nueva Editorial");
         $("#btnAdd").show();
         $("#btnUpdate").hide();
         $("#txtId").val(-1);
@@ -18,6 +19,7 @@ function openModal(id){
         $("#txtCountry").val("");
     }
     else { // Activar para actualizar
+        $("#modalTitle").html("Actualizar Editorial");
         $("#btnAdd").hide();
         $("#btnUpdate").show();
         editorial = getEditorial(id);
@@ -40,8 +42,8 @@ function updateDataGrid(items){
         data += "<tr>";
         data += "<td>" + items[i].name + "</td>";
         data += "<td>" + items[i].country + "</td>";
-        data += "<td><span onclick=\"openModal(" + items[i].idEditorial + ")\">A</span></td>";
-        data += "<td><span onclick=\"deleteEditorial(" + items[i].idEditorial + ")\">E</span></td>";
+        data += "<td><span onclick=\"openModal(" + items[i].idEditorial + ")\"><img src=\"../images/update.png\" alt=\"A\" width=\"25px\" height0=\"25px\"></span></td>";
+        data += "<td><span onclick=\"deleteEditorial(" + items[i].idEditorial + ")\"><img src=\"../images/delete.png\" alt=\"E\"  width=\"25px\" height0=\"25px\"></span></td>";
         data += "</tr>";
     }
     $("#tblEditorials > tbody:last-child").append(data);

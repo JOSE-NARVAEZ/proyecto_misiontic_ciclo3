@@ -28,6 +28,7 @@ function loadYears(value){
 //Acciones con el Modal
 function openModal(isbn){
     if(isbn==-1){ // Activar para agregar
+        $("#modalTitle").html("Nuevo Libro");
         $("#btnAdd").show();
         $("#btnUpdate").hide();
         $("#txtIsbn").val();
@@ -37,6 +38,7 @@ function openModal(isbn){
         loadYears(-1);
     }
     else { // Activar para actualizar
+        $("#modalTitle").html("Actuslizar Libro");
         $("#btnAdd").hide();
         $("#btnUpdate").show();
         book = getBook(isbn);

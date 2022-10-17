@@ -1,56 +1,66 @@
 body {
-    font-family: Verdana, sans-serif;
+    font-family: Georgia, serif;
     font-size: 19px;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    color: #000000;
     font-weight: normal;
     text-decoration: none;
     font-style: normal;
     font-variant: normal;
     text-transform: none;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
     max-width: 100%;
     margin: auto;
 }
 
-input {
-    -webkit-border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    border-radius: 10px 10px 10px 10px;
-    padding: 10px;
+input, select {
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #293462;
+    padding: 5  px;
+    font-size: 18px;
+    width: 250px;
+    height:25px;
 }
 
 label {
-
+    font-size: 18px;
+    color: #293462;
+    font-weight: lighter;
 }
 
 .login {
     text-align: right;
-    background: #89AFFF;
-    color: #EEEEEE;
+    background: #2B4865;
+    color: #9FF4DF;
     width: 100%;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .header {
-    background: #150050git;
+    background: #002B5B;
     font-size: 60px;
     color: #FFFFFF;
     text-align: center;
     height: 80px;
     vertical-align: middle;
+    padding-bottom: 40px;
 }
 
 .menu {
+    background: #002B5B;
     text-align: center;
-    padding: 10px;
+    padding-bottom: 20px;
 }
 
 .content {
+    padding: 5px;
 }
 
 .title {
-     font-size: 25px;
+     font-size: 48px;
+     color: #002B5B;
 }
 
 .new_element{
@@ -60,10 +70,11 @@ label {
 
 .data_grid {
     text-align: center;
+    padding:5px;
 }
 
 table.table_data {
-  border: 1px solid #05237C;
+  border: 1px solid #002B5B;
   width: auto;
   height: auto;
   text-align: center;
@@ -71,100 +82,153 @@ table.table_data {
 }
 
 table.table_data td, table.table_data th {
-  border: 1px solid #0D2981;
-  padding: 3px 5px;
+  border: 1px solid #256D85;
+  padding: 5px 5px;
 }
 
 table.table_data tbody td {
-  font-size: 17px;
+  font-size: 18px;
 }
 
 table.table_data tr:nth-child(even) {
-  background: #D0E4F5;
+  background: rgb(143, 227, 207, 0.15);
 }
 
 table.table_data thead {
-  background: #0B6FA4;
-  border-bottom: 5px solid #FFFFFF;
+  background: #2B4865;
+  border-bottom: 5px solid #256D85;
 }
 
 table.table_data thead th {
+  font-size: 18px;
   font-weight: bold;
-  color: #FFFFFF;
+  color: #AFF5EF;
   text-align: center;
-  border-left: 2px solid #17A1E2;
+  border-left: 2px solid #256D85;
 }
 
 .button_menu {
     -webkit-border-radius: 40px 10px 40px 10px;
     -moz-border-radius: 40px 10px 40px 10px;
     border-radius: 40px 10px 40px 10px;
-    border: 1px solid #2439BB;
-    color: #FFFF00;
-    background: #345ACC;
+    border: 1px solid #256D85;
+    font-weight: normal;
+    font-size: 24px;
+    vertical-align: top;
+    color: #2B4865;
+    background: #8FE3CF;
     height: 35px;
-    width: 150px;
+    width: 180px;
+    transition-duration: 0.35s;
+}
+
+.button_menu:hover {
+    border: 1px solid #2B4865;
+    font-weight: bold;
+    color: #8FE3CF;
+    background: #256D85;
 }
 
 .button_new {
-    -webkit-border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    border-radius: 10px 10px 10px 10px;
-    color: #ABCDEF;
-    background: #00FF00;
+    -webkit-border-radius: 30px 30px 30px 30px;
+    -moz-border-radius: 30px 30px 30px 30px;
+    border-radius: 30px 30px 30px 30px;
+    border: 1px solid #5FC3AF;
+    color: #FFFFFF;
+    background: #139487;
     height: 35px;
-    width: 200px;
+    width: 190px;
 }
 
 .button_add {
     -webkit-border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
-    color: #ABCDEFF;
-    background: #33CC33;
-    height: 35px;
-    width: 200px;
+    border: 1px solid #295482;
+    color: #293462;
+    background: #1CD6CE;
+    height: 30px;
+    width: 150px;
 }
 
 .button_update {
     -webkit-border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
-    color: #ABCDEFF;
-    background: #888800;
-    height: 35px;
-    width: 200px;
+    border: 1px solid #293462;
+    color: #293462;
+    background: #FEDB39;
+    height: 30px;
+    width: 150px;
 }
 
 .button_cancel {
     -webkit-border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
-    color: #ABCDEFF;
-    background: #CC3333;
-    height: 35px;
-    width: 200px;
+    border: 1px solid #293462;
+    color: #DFFFFF;
+    background: #D61C4E;
+    height: 30px;
+    width: 150px;
 }
-
 
 .modal{
     display: none;
     position: fixed;
+    left: 50%;
+    top: 290px;
+    margin-left: -180px;
     z-index: 1;
-    left: 200px;
-    top: 0;
     width: auto;
     height: auto;
     overflow: auto;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    border-radius: 10px 10px 10px 10px;
 }
 
 .modal_content{
-    background-color: #DDDDDD;
-    margin: 30% auto;
+    background-color: #F5FFFF;
     padding: 20px;
-    border: 1px solid #AAAAAA;
+    border: 1px solid #293462;
     width: auto;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    border-radius: 20px 20px 20px 20px;
+    -webkit-animation-name: modal-animation;
+    -webkit-animation-duration: 0.5s;
+    animation-name: modal-animation;
+    animation-duration: 0.5s;
+}
+
+#modalTitle {
+    color: #293462;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+@-webkit-keyframes modal-animation {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes modal-animation {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 1;
+    }
 }

@@ -39,9 +39,9 @@
             <div class="row">
                 <div class="col">
                     <nav>
-                        <a href="index.html"><button class="button_menu">Inicio</button></a> &nbsp;
-                        <a href="book.html"><button class="button_menu">Libros</button></a> &nbsp;
-                        <a href="editorial.html"><button class="button_menu">Editoriales</button></a> &nbsp;
+                        <a href="index.html"><button class="button_menu">Inicio</button></a>
+                        <a href="book.html"><button class="button_menu">Libros</button></a>
+                        <a href="editorial.html"><button class="button_menu">Editoriales</button></a>
                         <a href="author.html"><button class="button_menu">Autores</button></a>
                     </nav>
                 </div>
@@ -83,18 +83,50 @@
 
         <div id="modalNewBook" class="modal">
             <div class="modal_content">
-                <h2 id="modalTitle"></h2><br />
-                <label>ISBN:</label>
-                <input type="number" id="txtIsbn" value="" /> <br />
-                <label>T&iacute;tulo:</label>
-                <input type="text" id="txtTitle" value=""> <br />
-                <label>A&ntilde;o:</label>
-                <select id="cbxYear" value=""></select> <br />
-                <label>Editorial:</label>
-                <select id="cbxEditorial"></select> <br />
-                <button id="btnAdd" class="button_add" onclick="insertBook();">Agregar</button>
-                <button id="btnUpdate" class="button_update" onclick="updateBook();">Actualizar</button>
-                <button id="btnCancel" class="button_cancel" onclick="closeModal();">Cancelar</button>
+                <div class="row">
+                    <div class="col">
+                        <h2 id="modalTitle"></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col right">
+                        <label>ISBN</label>
+                    </div>
+                    <div class="col left">
+                        <input type="number" id="txtIsbn" value="" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col right">
+                        <label>T&iacute;tulo</label>
+                    </div>
+                    <div class="col left">
+                        <input type="text" id="txtTitle" value="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col right">
+                        <label>A&ntilde;o</label>
+                    </div>
+                    <div class="col left">
+                        <select id="cbxYear" value=""></select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col right">
+                        <label>Editorial</label>
+                    </div>
+                    <div class="col left">
+                        <select id="cbxEditorial"></select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col data_grid">
+                        <button id="btnAdd" class="button_add" onclick="insertBook();">Agregar</button>
+                        <button id="btnUpdate" class="button_update" onclick="updateBook();">Actualizar</button>
+                        <button id="btnCancel" class="button_cancel" onclick="closeModal();">Cancelar</button>
+                    </div>
+                </div>
             </div>
         </div>
 
