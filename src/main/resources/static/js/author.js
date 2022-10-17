@@ -46,8 +46,8 @@ function updateDataGrid(authors){
             data += "<td>" + authors[i].code + "</td>";
             data += "<td>" + authors[i].name + "</td>";
             data += "<td>" + authors[i].lastname + "</td>";
-            data += "<td><span onclick=\"openModal(" + authors[i].code + ")\">A</span></td>";
-            data += "<td><span onclick=\"deleteAuthor(" + authors[i].code + ")\">E</span></td>";
+            data += "<td><span onclick=\"openModal(" + authors[i].code + ")\"><img src=\"../images/update.png\" alt=\"A\" width=\"25px\" height0=\"25px\"></span></td>";
+            data += "<td><span onclick=\"deleteAuthor(" + authors[i].code + ")\"><img src=\"../images/delete.png\" alt=\"E\"  width=\"25px\" height0=\"25px\"></span></td>";
         data += "</tr>";
     }
     $("#tblAuthors > tbody:last-child").append(data);

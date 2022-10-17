@@ -65,8 +65,8 @@ function updateDataGrid(books){
             data += "<td>" + books[i].title + "</td>";
             data += "<td>" + books[i].year + "</td>";
             data += "<td>" + books[i].editorialFK.name + "</td>";
-            data += "<td><span onclick=\"openModal(" + books[i].isbn + ")\">A</span></td>";
-            data += "<td><span onclick=\"deleteBook(" + books[i].isbn + ")\">E</span></td>";
+            data += "<td><span onclick=\"openModal(" + books[i].isbn + ")\"><img src=\"../images/update.png\" alt=\"A\" width=\"25px\" height0=\"25px\"></span></td>";
+            data += "<td><span onclick=\"deleteBook(" + books[i].isbn + ")\"><img src=\"../images/delete.png\" alt=\"E\"  width=\"25px\" height0=\"25px\"></span></td>";
         data += "</tr>";
     }
     $("#tblBooks > tbody:last-child").append(data);
